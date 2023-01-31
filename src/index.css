@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  :root {
+    @apply bg-[#242424];
+  }
+}
+
+@layer components {
+  .toasty {
+    position: absolute;
+    display: none;
+    padding: 1em 2em;
+    align-items: center;
+    justify-content: space-between;
+    width: min(100%, 320px);
+    height: min-content;
+    border-radius: 4px;
+  }
+  .toasty button {
+    all: unset;
+    cursor: pointer;
+  }
+
+  .top-center {
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .bottom-center {
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .top-right {
+    top: 2rem;
+    right: 2rem;
+  }
+  .top-left {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .bottom-left {
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .bottom-right {
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
